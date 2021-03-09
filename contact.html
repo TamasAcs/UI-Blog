@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UI designed blog website created with html and css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="contact.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="toggle">
+        <div class="logo">
+            <a href="./home.html"><h1 id="logo">JD</h1></a>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <a href="./home.html"><li>Home</li></a>
+          <a href="./index.html"><li>blog</li></a>
+          <a href="./about.html"><li>About</li></a>
+          <a href="./contact.html"><li class="active">Contact</li></a>
+          </ul>
+        </div>
+        <div class="burger">
+          <i class="fas fa-bars fa-lg" id="show"></i>
+          <i class="fas fa-times fa-lg" onclick="close()" id="close"></i>
+        </div>
+      </header>
+
+    <div class="container">
+        <form class="wrap">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="text" rows="4" cols="40" placeholder="Enter message..." required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send message</button>
+        </form>
+    </div>
+
+
+    
+<div class="ring"></div>
+<div class="ring2"></div>
+    <div class="circle1"></div>
+    <div class="circle11"></div>
+    <div class="circle12"></div>
+    <div class="circle2"></div>
+    <div class="circle23"></div>
+    <div class="circle3"></div>
+    <div class="circle33"></div>
+    <div class="shadow1"></div>
+    <div class="shadow2"></div>
+
+    <script>
+const burger = document.querySelector(".burger");
+const header = document.querySelector(".toggle");
+burger.addEventListener("click", () => {
+header.classList.toggle("show");})
+    </script>
+</body>
+</html>
