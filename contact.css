@@ -137,6 +137,8 @@
     letter-spacing: 1px;
     outline: none;
     resize: none;
+    border: none;
+    background: transparent;
   }
   input[type="text"],
   input[type="email"] {
@@ -165,8 +167,9 @@
     outline: none;
   }
   button:hover {
-    background-color: lightgray;
-    border: 1px solid var(--red);
+    border: none;
+    background-color: #cfcfe6;
+    transition: 0.2s ease-in;
   }
 button:active{
     transform: translateY(2px);

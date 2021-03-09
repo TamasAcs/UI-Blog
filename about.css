@@ -133,38 +133,6 @@
   span{
     font-family: 'La Belle Aurore', cursive;
   }
-  button{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 150px;
-      background:transparent;
-      outline: none;
-      border-radius: 100% 43% 77% 47% / 100% 90% 100% 80%  ;
-      border: 2px solid #9595c6;
-      cursor: pointer;
-      transition: 0.5s ease;
-  }
-  button img{
-      width: 20px;
-      margin-right: 10px;
-  }
-  button:hover{
-      border-radius: 51% 78% 71% 57% / 100% 80% 77% 83% ;
-      transition: 0.5s ease;
-  }
-  button:active{
-      transform: translateY(2px);
-      box-shadow: 0px 2px 5px #9595c6;
-      transition: 0.1s ease;
-  }
-  .info > a{
-      width: 150px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-  }
   .ring{
       position: absolute;
       z-index: 2;
