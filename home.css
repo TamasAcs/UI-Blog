@@ -396,6 +396,12 @@ border-color: rgb(129, 56, 163);
 @media (min-device-width: 350px) and (max-width: 400px) {
     
   button {
-    background: linear-gradient(to right, #d5d6e2, #efeff6);
+    background: linear-gradient(to right, #a0a2be, #d5d5e3);
+  }
+  .ring{
+    z-index: 4;
+  }
+  .ring2{
+    z-index: 4;
   }
 }

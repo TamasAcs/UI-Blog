@@ -339,8 +339,15 @@ border-color: rgb(129, 56, 163);
 }
 
 @media (min-device-width: 350px) and (max-width: 767px) {
+  body{
+    height: auto;
+  }
   .toggle.show .nav {
     display: flex;
+    background-color: #c6c8de;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
   }
   .nav {
     display: none;
@@ -392,6 +399,9 @@ border-color: rgb(129, 56, 163);
 }
 
 @media (min-device-width: 350px) and (max-width: 400px) {
+  body{
+    height: auto;
+  }
   .container .title {
     font-size: 2.5rem;
     padding: 20px 0;
