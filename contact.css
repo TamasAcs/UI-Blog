@@ -5,11 +5,15 @@
   }
   body,
   html {
-    min-width: 350px;
     width: 100%;
     height: 100vh;
     font-family: "Poppins", sans-serif;
     background-color: #e2e5eb;
+  }
+  .wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
     overflow: hidden;
   }
   header {
@@ -366,13 +370,22 @@ button:active{
     }
   }
   
-  @media (min-device-width: 350px) and (max-width: 767px) {
-    
+  @media (min-device-width: 320px) and (max-width: 767px) {
+    input[type="text"], input[type="email"] {
+      font-size: 14px;
+  }
+  .wrap{
+    width: 290px;
+    height: 270px;
+  }
+  button{
+    margin: 0;
+  }
     .toggle.show .nav {
       display: flex;
       background-color: #c6c8de;
       padding: 20px;
-      width: 30%;
+      width: 40%;
       border-radius: 10px;
     }
     .nav {
@@ -408,9 +421,5 @@ button:active{
       z-index: 2;
       filter: blur(50px);
     }
-  }
-  
-  @media (min-device-width: 350px) and (max-width: 400px) {
-      
   }
   

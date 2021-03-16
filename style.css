@@ -5,12 +5,16 @@
 }
 body,
 html {
-  min-width: 350px;
   width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: #e2e5eb;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 header {
   width: 100%;
@@ -107,12 +111,11 @@ a:hover{
 }
 .container {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  position: relative;
+  position: absolute;
+  z-index: 5;
 }
 .info {
   width: 35%;
@@ -130,7 +133,7 @@ a:hover{
   padding: 20px 0;
 }
 .date {
-  color: #6e7282;
+  color: #c12473;
   font-size: 0.8rem;
 }
 p {
@@ -339,14 +342,14 @@ border-color: rgb(129, 56, 163);
 }
 
 @media (min-device-width: 350px) and (max-width: 767px) {
-  body{
-    height: auto;
+  .wrapper{
+    height: 110vh;
   }
   .toggle.show .nav {
     display: flex;
     background-color: #c6c8de;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
   }
   .nav {
@@ -363,6 +366,7 @@ border-color: rgb(129, 56, 163);
   }
   .info {
     z-index: 5;
+    width: 70%;
   }
   .container .title {
     font-size: 2.9rem;
@@ -398,9 +402,28 @@ border-color: rgb(129, 56, 163);
   }
 }
 
-@media (min-device-width: 350px) and (max-width: 400px) {
-  body{
-    height: auto;
+@media (min-device-width: 320px) and (max-width: 400px) {
+  .toggle.show .nav {
+    display: flex;
+    background-color: #c6c8de;
+    padding: 20px;
+    width: 35%;
+    border-radius: 10px;
+  }
+  .nav {
+    display: none;
+  }
+  li:hover {
+    color: #e54e84 !important;
+  }
+  .burger {
+    display: flex;
+  }
+  #show {
+    display: flex;
+  }
+  .wrapper{
+    height: 120vh;
   }
   .container .title {
     font-size: 2.5rem;

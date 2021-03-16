@@ -5,12 +5,10 @@
 }
 body,
 html {
-  min-width: 350px;
   width: 100%;
   height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: #e2e5eb;
-  overflow: hidden;
 }
 header {
   width: 100%;
@@ -33,6 +31,12 @@ header .nav > ul {
   text-transform: uppercase;
   list-style: none;
   font-weight: 600;
+}
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 .logo {
   width: 35px;
@@ -107,11 +111,10 @@ a:hover{
 }
 .container {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .container h1 {
   font-size: 5rem;
@@ -138,7 +141,7 @@ button {
   margin-top: 50px;
   text-transform: uppercase;
   border-radius: 59% 33% 78% 27% / 80% 29% 76% 29%;
-  border: none;
+  border: 2px solid #7a69a7;
   background: linear-gradient(to right, #d5d6e2, #b8b8d3);
   cursor: pointer;
   font-weight: bolder;
@@ -342,10 +345,11 @@ border-color: rgb(129, 56, 163);
   }
 }
 
-@media (min-device-width: 350px) and (max-width: 767px) {
+@media (min-device-width: 320px) and (max-width: 767px) {
   .container h1 {
     font-size: 3rem;
     text-align: center;
+    padding: 50px 20px;
   }
   p {
     width: 70%;
@@ -355,7 +359,7 @@ border-color: rgb(129, 56, 163);
     display: flex;
     background-color: #c6c8de;
     padding: 20px;
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
   }
   .nav {
@@ -393,8 +397,10 @@ border-color: rgb(129, 56, 163);
   }
 }
 
-@media (min-device-width: 350px) and (max-width: 400px) {
-    
+@media (min-device-width: 320px) and (max-width: 400px) {
+  .container{
+    height: 65vh;
+  }
   button {
     background: linear-gradient(to right, #a0a2be, #d5d5e3);
   }

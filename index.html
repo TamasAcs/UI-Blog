@@ -4,72 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="UI designed blog website created with html and css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta
+      name="description"
+      content="UI designed blog website created with html and css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>UI Blog Page</title>
   </head>
   <body>
-    <header class="toggle">
-      <div class="logo">
-        <a href="./home.html"><h1 id="logo">JD</h1></a>
-      </div>
-      <div class="nav" id="nav">
-        <ul>
-          <a href="./home.html"><li>Home</li></a>
-          <a href="./index.html"><li class="active">blog</li></a>
-          <a href="./about.html"><li>About</li></a>
-          <a href="./contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
-      <div class="burger">
-        <i class="fas fa-bars fa-lg" id="show"></i>
-        <i class="fas fa-times fa-lg" onclick="close()" id="close"></i>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header class="toggle">
+        <div class="logo">
+          <a href="./home.html"><h1 id="logo">JD</h1></a>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./index.html"><li class="active">blog</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="burger">
+          <i class="fas fa-bars fa-lg" id="show"></i>
+          <i class="fas fa-times fa-lg" onclick="close()" id="close"></i>
+        </div>
+      </header>
 
-    <section class="container">
-      <div class="info">
-        <h1 class="title">The Blog</h1>
-        <p class="date">February 10, 2021</p>
-        <h2 class="subtitle">Jon Doe Web Developer and UI Designer</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-          nesciunt repellat inventore. Possimus nostrum neque cumque sapiente
-          vero deserunt quos quisquam, earum fuga, ex eum explicabo incidunt
-          tenetur odio similique.
-        </p>
+      <section class="container">
+        <div class="info">
+          <h1 class="title">The Blog</h1>
+          <p class="date">February 10, 2021</p>
+          <h2 class="subtitle">Jon Doe Web Developer and UI Designer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            nesciunt repellat inventore. Possimus nostrum neque cumque sapiente
+            vero deserunt quos quisquam, earum fuga, ex eum explicabo incidunt
+            tenetur odio similique.
+          </p>
 
-        <div class="line"></div>
+          <div class="line"></div>
 
-        <p class="date">January 28, 2021</p>
-        <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          doloremque quibusdam placeat quod quis eveniet ad dolorum nemo sunt
-          eum.
-        </p>
-      </div>
-    </section>
+          <p class="date">January 28, 2021</p>
+          <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            doloremque quibusdam placeat quod quis eveniet ad dolorum nemo sunt
+            eum.
+          </p>
+        </div>
+      </section>
 
-    
-<div class="ring"></div>
-<div class="ring2"></div>
-    <div class="circle1"></div>
-    <div class="circle11"></div>
-    <div class="circle12"></div>
-    <div class="circle2"></div>
-    <div class="circle23"></div>
-    <div class="circle3"></div>
-    <div class="circle33"></div>
-    <div class="shadow1"></div>
-    <div class="shadow2"></div>
-
+      <div class="ring"></div>
+      <div class="ring2"></div>
+      <div class="circle1"></div>
+      <div class="circle11"></div>
+      <div class="circle12"></div>
+      <div class="circle2"></div>
+      <div class="circle23"></div>
+      <div class="circle3"></div>
+      <div class="circle33"></div>
+      <div class="shadow1"></div>
+      <div class="shadow2"></div>
+    </div>
     <script>
-const burger = document.querySelector(".burger");
-const header = document.querySelector(".toggle");
-burger.addEventListener("click", () => {
-header.classList.toggle("show");})
+      const burger = document.querySelector(".burger");
+      const header = document.querySelector(".toggle");
+      burger.addEventListener("click", () => {
+        header.classList.toggle("show");
+      });
     </script>
   </body>
 </html>
